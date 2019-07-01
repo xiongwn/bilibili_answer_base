@@ -1,0 +1,1 @@
+alert(document.onselectstart = document.onbeforecopy = document.oncontextmenu = document.onmousedown = document.onkeydown = function(){return true;});void(document.body.onmouseup=''); void(document.body.onselectstart=''); void(document.body.onmouseup=''); void(document.body.oncopy='');
