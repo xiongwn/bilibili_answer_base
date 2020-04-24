@@ -15,8 +15,11 @@
 //2018年版本，已作废
 
 index=0
-setInterval(()=>{
+let interval = setInterval(() => {
+	if($(".progress-score > .num").text==="40") {
+		clearInterval(interval)
+	}
 	$(".answer-outer").eq(index).trigger("click")
-	index=index===3?0:index+1
+	index = index === 3 ? 0 : index + 1
 },1000)
 //2020年最新
